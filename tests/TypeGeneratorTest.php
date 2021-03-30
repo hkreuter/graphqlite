@@ -11,7 +11,7 @@ class TypeGeneratorTest extends AbstractQueryProviderTest
 {
     private $container;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->container = new Picotainer([
             TypeFoo::class => function() { return new TypeFoo(); },

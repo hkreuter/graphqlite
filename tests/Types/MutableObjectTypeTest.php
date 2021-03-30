@@ -13,7 +13,7 @@ class MutableObjectTypeTest extends TestCase
      */
     private $type;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->type = new MutableObjectType([
             'name'    => 'TestObject',

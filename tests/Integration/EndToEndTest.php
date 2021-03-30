@@ -58,7 +58,7 @@ class EndToEndTest extends TestCase
      */
     private $mainContainer;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->mainContainer = new Picotainer([
             Schema::class => function(ContainerInterface $container) {
